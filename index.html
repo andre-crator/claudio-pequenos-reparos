@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claudio Pequenos Reparos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Se quiser usar ícones, ative Font Awesome:
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  -->
+</head>
+<body>
+  <header class="hero">
+    <img src="img/hero.jpg" alt="Pessoa pintando parede" class="hero-img">
+    <div class="hero-content">
+      <small>REPAROS RESIDENCIAIS</small>
+      <h1>SERVIÇOS</h1>
+      <hr>
+      <div class="hero-icons">
+        <div class="icon-item"><!-- colocar svg ou fontawesome -->
+          <img src="img/service1.jpg" alt="Pintura" />
+          <span>Pintura</span>
+        </div>
+        <div class="icon-item">
+          <img src="img/service2.jpg" alt="Limpeza" />
+          <span>Limpeza</span>
+        </div>
+        <div class="icon-item">
+          <img src="img/service3.jpg" alt="Encanamento" />
+          <span>Encanamento</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <small>NOSSOS SERVIÇOS</small>
+      <h2>Como Podemos Ajudar?</h2>
+      <p>Somos especializados em manutenção de rotina e reparos de emergência para deixar tudo sem preocupações. Ligue hoje para descobrir como nosso processo é simples!</p>
+      <a class="btn" href="tel:+550000000000">SOLICITAR AGORA</a>
+    </section>
+
+    <section class="contact-cta">
+      <h3>Precisa de Ajuda Imediata?</h3>
+      <p class="phone">Ligue agora: <strong class="phone-number">(72) 3123-345</strong></p>
+      <img src="img/worker1.jpg" alt="Técnico em manutenção" />
+    </section>
+
+    <section class="quality">
+      <div class="quality-image"></div>
+      <div class="quality-text">
+        <h3>MELHOR QUALIDADE</h3>
+        <hr class="red-line">
+        <p>A empresa atende proprietários, empreiteiros, corretores e gestores prediais para manter, atualizar e reparar imóveis.</p>
+        <a class="btn" href="tel:+550000000000">SOLICITAR AGORA</a>
+      </div>
+    </section>
+
+    <section class="services-grid">
+      <h2>Nossos Serviços</h2>
+      <div class="grid">
+        <article class="service-card">
+          <div class="icon-circle">🎨</div>
+          <h4>Pintura</h4>
+          <p>Enviamos um reparador multi-habilidades para sua casa ou comércio para poupar seu tempo...</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-circle">⚡</div>
+          <h4>Elétrica</h4>
+          <p>Enviamos um reparador multi-habilidades para sua casa ou comércio para poupar seu tempo...</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-circle">🔧</div>
+          <h4>Reparos</h4>
+          <p>Enviamos um reparador multi-habilidades para sua casa ou comércio para poupar seu tempo...</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Claudio Pequenos Reparos — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    // atualiza ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
