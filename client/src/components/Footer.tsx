@@ -17,7 +17,7 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/5524988361194" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all">
+              <a href="https://wa.me/5524988361194?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>

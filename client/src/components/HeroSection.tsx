@@ -32,7 +32,7 @@ export default function HeroSection() {
             </Button>
             
             <Button variant="outline" size="lg" className="rounded-full font-bold text-base px-8 h-12 border-2 hover:bg-gray-100" asChild>
-              <a href="https://wa.me/5524988361194" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5524988361194?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-4 w-4 text-green-600" />
                 Falar no WhatsApp
               </a>
