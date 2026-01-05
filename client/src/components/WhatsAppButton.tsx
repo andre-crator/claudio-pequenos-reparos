@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-  // Mensagem codificada: "Olá Cláudio, vi seu site e gostaria de um orçamento."
+  // Mensagem pré-definida para o WhatsApp
   const message = encodeURIComponent("Olá Cláudio, vi seu site e gostaria de um orçamento.");
   const phoneNumber = "5524988361194";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
         Fale conosco agora!
       </span>
       
-      {/* Ping animation effect */}
+      {/* Efeito de animação de pulso */}
       <span className="absolute -inset-1 rounded-full bg-green-500 opacity-30 animate-ping pointer-events-none"></span>
     </a>
   );

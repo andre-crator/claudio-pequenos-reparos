@@ -30,10 +30,10 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+// NOTA: Sobre o Tema
+// - Primeiro escolha um tema padrão de acordo com seu estilo de design (fundo escuro ou claro), depois altere a paleta de cores em index.css
+//   para manter cores de primeiro plano/fundo consistentes em todos os componentes
+// - Se deseja tornar o tema alternável, passe `switchable` para ThemeProvider e use o hook `useTheme`
 
 function App() {
   return (

@@ -40,6 +40,7 @@ export default function GallerySection() {
     setCurrentIndex((prev) => (prev === galleryItems.length - 1 ? 0 : prev + 1));
   };
 
+  // Manipular movimento do mouse para atualizar posição do slider
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const container = e.currentTarget;
     const rect = container.getBoundingClientRect();
@@ -69,14 +70,14 @@ export default function GallerySection() {
             className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl cursor-col-resize group"
             onMouseMove={handleMouseMove}
           >
-            {/* After Image */}
+            {/* Imagem Depois */}
             <img
               src={currentItem.after}
               alt="Depois"
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Before Image */}
+            {/* Imagem Antes */}
             <div
               className="absolute inset-0 w-full h-full overflow-hidden"
               style={{ width: `${sliderPosition}%` }}
@@ -89,7 +90,7 @@ export default function GallerySection() {
               />
             </div>
 
-            {/* Slider Handle */}
+            {/* Alça do Slider */}
             <div
               className="absolute top-0 bottom-0 w-1 bg-white transition-none"
               style={{ left: `${sliderPosition}%` }}
@@ -102,7 +103,7 @@ export default function GallerySection() {
               </div>
             </div>
 
-            {/* Labels */}
+            {/* Rótulos */}
             <div className="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-bold">
               ANTES
             </div>
@@ -111,14 +112,14 @@ export default function GallerySection() {
             </div>
           </div>
 
-          {/* Project Info */}
+          {/* Informações do Projeto */}
           <div className="mt-8 text-center">
             <h3 className="font-heading font-bold text-2xl text-gray-900 mb-2">
               {currentItem.title}
             </h3>
             <p className="text-gray-600 mb-8">{currentItem.description}</p>
 
-            {/* Navigation */}
+            {/* Navegação */}
             <div className="flex items-center justify-center gap-4">
               <button
                 onClick={handlePrev}
@@ -148,7 +149,7 @@ export default function GallerySection() {
             </div>
           </div>
 
-          {/* Counter */}
+          {/* Contador */}
           <div className="mt-8 text-center text-gray-500 text-sm">
             Projeto {currentIndex + 1} de {galleryItems.length}
           </div>

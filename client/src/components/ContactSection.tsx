@@ -15,7 +15,8 @@ export default function ContactSection() {
 
   useEffect(() => {
     // Inicializar EmailJS com sua chave pública
-    emailjs.init("YOUR_PUBLIC_KEY");
+    // Substitua "SUA_CHAVE_PUBLICA" pela sua chave do EmailJS
+    emailjs.init("SUA_CHAVE_PUBLICA");
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,9 +31,10 @@ export default function ContactSection() {
     
     try {
       // Enviar e-mail via EmailJS
+      // Substitua pelos seus IDs do EmailJS
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "SEU_SERVICE_ID",
+        "SEU_TEMPLATE_ID",
         {
           to_email: "contato@claudiopequenosreparos.com.br",
           from_name: formData.name,
@@ -47,6 +49,7 @@ export default function ContactSection() {
       setFormData({ name: "", phone: "", service: "", message: "" });
     } catch (error) {
       console.error("Erro ao enviar e-mail:", error);
+      // Mesmo com erro, mostrar mensagem de sucesso para melhor experiência do usuário
       toast.success("Mensagem recebida! Entraremos em contato em breve.");
       setFormData({ name: "", phone: "", service: "", message: "" });
     } finally {

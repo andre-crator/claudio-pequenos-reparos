@@ -6,7 +6,7 @@ export default function BookingSection() {
     <section className="py-24 bg-white">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Info */}
+          {/* Esquerda: Informações */}
           <div className="space-y-8">
             <div>
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-900 mb-4">
@@ -71,7 +71,7 @@ export default function BookingSection() {
             </p>
           </div>
 
-          {/* Right: Calendar Preview */}
+          {/* Direita: Visualização do Calendário */}
           <div className="bg-gradient-to-br from-primary/5 to-blue-500/5 rounded-2xl p-8 border border-gray-200 min-h-[400px] flex items-center justify-center">
             <div className="text-center space-y-4">
               <Calendar className="w-16 h-16 text-primary mx-auto opacity-50" />

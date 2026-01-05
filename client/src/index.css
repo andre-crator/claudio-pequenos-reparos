@@ -156,16 +156,16 @@
 
 @layer components {
   /**
-   * Custom container utility that centers content and adds responsive padding.
+   * Utilitário de contêiner personalizado que centraliza o conteúdo e adiciona preenchimento responsivo.
    *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
+   * Isso substitui o comportamento padrão do contêiner do Tailwind para:
+   * - Centralizar automaticamente o conteúdo (mx-auto)
+   * - Adicionar preenchimento horizontal responsivo
+   * - Definir largura máxima para telas grandes
    *
-   * Usage: <div className="container">...</div>
+   * Uso: <div className="container">...</div>
    *
-   * For custom widths, use max-w-* utilities directly:
+   * Para larguras personalizadas, use utilitários max-w-* diretamente:
    * <div className="max-w-6xl mx-auto px-4">...</div>
    */
   .container {

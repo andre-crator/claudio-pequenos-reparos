@@ -1,5 +1,6 @@
 import { ArrowRight, Lightbulb, Wrench, Droplet } from "lucide-react";
 
+// Lista de artigos do blog com informações de cada post
 const blogPosts = [
   {
     icon: Droplet,
