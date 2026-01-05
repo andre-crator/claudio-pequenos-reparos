@@ -85,12 +85,12 @@ export default function BlogSection() {
                 <span className="text-xs text-gray-500 font-medium">
                   ⏱️ {post.readTime} de leitura
                 </span>
-                <a
-                  href="#"
-                  className="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
-                >
-                  Ler mais <ArrowRight className="w-4 h-4" />
-                </a>
+              <a
+                href={`/blog/${index + 1}`}
+                className="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+              >
+                Ler mais <ArrowRight className="w-4 h-4" />
+              </a>
               </div>
             </article>
           ))}
