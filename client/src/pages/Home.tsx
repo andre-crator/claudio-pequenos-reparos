@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FAQSection from "@/components/FAQSection";
 import BlogSection from "@/components/BlogSection";
+import GallerySection from "@/components/GallerySection";
+import BookingSection from "@/components/BookingSection";
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <TestimonialsSection />
+        <GallerySection />
         <FAQSection />
         <BlogSection />
+        <BookingSection />
         <ContactSection />
       </main>
 

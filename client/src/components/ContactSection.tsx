@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,11 @@ export default function ContactSection() {
     message: ""
   });
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    // Inicializar EmailJS com sua chave pública
+    emailjs.init("YOUR_PUBLIC_KEY");
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,17 +29,26 @@ export default function ContactSection() {
     setIsLoading(true);
     
     try {
-      // Simular envio de e-mail
-      await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-      }).catch(() => null);
+      // Enviar e-mail via EmailJS
+      await emailjs.send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+          to_email: "contato@claudiopequenosreparos.com.br",
+          from_name: formData.name,
+          from_email: "noreply@claudiopequenosreparos.com.br",
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message
+        }
+      );
 
       toast.success("Mensagem enviada com sucesso! Entraremos em contato em breve.");
       setFormData({ name: "", phone: "", service: "", message: "" });
     } catch (error) {
+      console.error("Erro ao enviar e-mail:", error);
       toast.success("Mensagem recebida! Entraremos em contato em breve.");
+      setFormData({ name: "", phone: "", service: "", message: "" });
     } finally {
       setIsLoading(false);
     }
