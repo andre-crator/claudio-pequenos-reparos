@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Wrench } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// Adicionar IDs às seções para navegação
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,6 +21,8 @@ export default function Header() {
     { name: "Serviços", href: "#services" },
     { name: "Sobre", href: "#about" },
     { name: "Depoimentos", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" },
+    { name: "Blog", href: "#blog" },
     { name: "Contato", href: "#contact" },
   ];
 
